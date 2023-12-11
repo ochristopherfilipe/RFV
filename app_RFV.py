@@ -85,7 +85,11 @@ def main():
 
     # Botão para carregar arquivo na aplicação
     st.sidebar.write("## Suba o arquivo")
-    data_file_1 = st.sidebar.file_uploader("Bank marketing data", type = ['csv','xlsx'])
+    data_file_1 = st.sidebar.file_uploader("Bank marketing data", type=['csv', 'xlsx'])
+
+    # Link abaixo do botão
+    st.sidebar.write("[Link para baixar o arquivo de dados](https://github.com/ochristopherfilipe/RFV)")
+
 
     # Verifica se há conteúdo carregado na aplicação
     if (data_file_1 is not None):
